@@ -1,0 +1,132 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f3eaf7;
+    color: #4b2e83;
+}
+
+/* Header */
+.header {
+    background-color: #d1c4e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b2e83;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    color: #4b2e83;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #2e1d5a;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e6e0ef;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    color: #4b2e83;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero p {
+    color: #6c5b7b;
+    font-size: 1.2rem;
+}
+
+/* Section */
+.section {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #e1bee7;
+    margin: 1rem auto;
+    border-radius: 8px;
+    max-width: 1200px;
+}
+
+.section h2 {
+    color: #4b2e83;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid */
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-card {
+    background-color: #f3eaf7;
+    border: 2px solid #ba68c8;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-card p {
+    padding: 1rem;
+    color: #4b2e83;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #4b2e83;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.footer a {
+    color: #e1bee7;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}

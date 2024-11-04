@@ -1,0 +1,50 @@
+/* Reset */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    min-height: 100vh; /* Makes the page take up full viewport height */
+}
+
+header {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;  /* For horizontal navigation */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd; /* Add a subtle separator between sections */
+}
+
+/* Basic responsive adjustments (expand upon this for full responsiveness) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    }
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add space between stacked items */
+    }
+}
+footer{
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
